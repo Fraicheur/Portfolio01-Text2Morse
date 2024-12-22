@@ -6,7 +6,6 @@ from dictionary import MORSE_CODE_DICT
 # ▄▄▄ Dash, or "dah", which is 3 times "dit"
 # The three spaces are added at the end of each character once they are translated
 
-
 # Functions
 def greet_user() -> None:
     print('''
@@ -61,7 +60,8 @@ def main() -> None:
             translated_char = translate_one_char(character)
             # Append that value to a result list
             result = result + translated_char
-            result = result + "   "  # Adding three spaces at the end of each character
+            # Adding three spaces at the end of each character
+            result = result + "   "
 
         # Once loop over, show that result list
         print_translated_text(text_to_translate, str(result))
