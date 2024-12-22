@@ -53,7 +53,8 @@ def main() -> None:
         result = ''
 
         # Prompt a short text of a few words, store in variable as lower case
-        text_to_translate = input('Please enter the text you want to translate into Morse code and press Enter: ').lower()
+        text_to_translate = input('Please enter the text you want to translate '
+                                  'into Morse code and press Enter: ').lower()
 
         # Using a dictionary, for each character (index), find the value associated in Morse code
         for character in text_to_translate:
@@ -68,8 +69,7 @@ def main() -> None:
         # Ask user if they want to continue or leave
         choice_to_continue = choose_to_continue()
 
-    print("Thank you for using my translation tool. "
-          "Don't hesitate to write me a review at sieger.camille@gmail.com")
+    print("Thank you for using my translation tool. ")
 
 
 if __name__ == '__main__':
